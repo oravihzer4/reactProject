@@ -1,0 +1,72 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Saira Semi Condensed", serif;
+}
+
+nav {
+  font-size: 20px;
+  text-decoration: none;
+}
+footer {
+  font-size: 20px;
+  margin: 4px;
+  padding: 5px;
+}
+.avatar {
+  width: 300px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 50px;
+  transition: 0.1s ease-out 0.1s;
+}
+.avatar:hover {
+  opacity: 50%;
+  width: 320px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Semi Condensed", serif;
+}
+.theme-light {
+  background-color: #f8f9fa;
+  color: #212529;
+  .githubLogo {
+    color: #212529;
+  }
+}
+
+.theme-dark {
+  background-color: #212529;
+  color: #212529;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #f8f9fa;
+    .githubLogo {
+      color: #f8f9fa;
+    }
+    .isbus {
+      color: #f8f9fa;
+    }
+  }
+}
+p {
+  font-family: "Saira Semi Condensed", serif;
+}
+.aboutParagraph {
+  font-size: 30px;
+}
+.navbar {
+  font-family: "Saira Semi Condensed", serif;
+}
