@@ -1,10 +1,11 @@
 import { FunctionComponent, useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { ThemeContext, ThemeContextType } from "../context/ThemeContext";
 import { errorMassage } from "../Services/FeedbackService";
 
 const Navbar: FunctionComponent = () => {
+  const navigate = useNavigate();
   const { user, logout } = useAuth();
   const themeContext = useContext(ThemeContext) as ThemeContextType;
   const { toggleTheme } = themeContext;
@@ -87,6 +88,7 @@ const Navbar: FunctionComponent = () => {
                 onClick={() => {
                   logout();
                   errorMassage("Logged out successfully");
+                  navigate("/login");
                 }}
                 className="btn btn-link text-danger"
               >
